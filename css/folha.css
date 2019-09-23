@@ -1,0 +1,164 @@
+/*
+Theme Name: Coolab
+Description: Templete da Coolab
+Author: Coolab
+*/
+@font-face{
+    font-family: Montserrat_Light;
+    src: url('fonts/montserrat/Montserrat-Light.ttf');
+}
+@font-face{
+    font-family: Montserrat_Alternates;
+    src: url('fonts/montserrat_alternates/MontserratAlternates-Bold.ttf');
+}
+p{font-family: Montserrat_Light; }
+h1, h2,h3, h4,h5,h6{font-family: Montserrat_Alternates;}
+.home-menu{background-color: #004D54; box-shadow:none;}
+.home-menu ul{float: none;}
+.pure-menu-disabled, .pure-menu-heading, .pure-menu-link{color: #fff;}
+ul.pure-menu-list li.pure-menu-item a{color:#fff; padding: 5em 1em; text-decoration: none; white-space: nowrap; background-color: transparent;}
+.pure-g{letter-spacing: 0;}
+div#menu{width: 100%; position: fixed; z-index: 2000; background-color: #00bc9b; height: 2.6em; }
+.menu-blue{background-color: #23293b !important;}
+/*#coola-top-menu{overflow: hidden;}*/
+.custom-wrapper {
+    background-color: #ffd390;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.1em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.content-wrapper{top: 80%; background-color: #c6cbdc;}
+.custom-wrapper.open {
+    height: 14em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.custom-toggle .bar {
+    background-color: #777;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+  .custom-wrapper.open {
+      height: 14em !important;
+  }
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+    }
+
+}
+
+a#coolab-logo{float: left;}
+a.coolab-button{border-radius: 25px;background-color: #f9005b; text-decoration: none;}
+/*.splash-container{background-color: #004D54; height: 700px; position: unset;}*/
+div#coolab-video{position: relative;height: 500px; background: #00bc9b; }
+div#coolab-video div#legenda{position: absolute; bottom: 0; left: 0; width: 100%; padding-right: 10%;padding-left: 10%; color: white;}
+div#coolab-video div#legenda p{font-size: 1.6em;}
+div#coolab-video div#legenda a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b;}
+
+div#coolab-projetos{padding-right: 10%; padding-left: 10%; margin-top: 90px; border-top: 1px solid #a5a5a5;background-color: #c6cbdc;}
+div#coolab-projetos h2:first-child{text-align: left; margin:0;margin-left: 15px; width: 200px; float: left;}
+div.projeto{width: 100%; height: 20em;background: #e6eaf4; margin-bottom: 25px;}
+
+div.projeto div.descricao{height: 50%; position: relative; top:60%; width: 100%; background-color: #003E44; padding: 10px;}
+div.projeto div.descricao h3{margin-bottom: 30px;}
+div.projeto div.descricao p{margin: 0;}
+
+div.trabalho div.descricao{height: 50%; position: relative; top:60%; width: 100%; text-align: left; padding: 10px; color: #23293b;}
+div#coolab-trabalhos a.pure-button{margin-top: 20px; border-radius: 25px;margin-bottom: 40px;background-color: #f9005b; float: right;}
+div.trabalho div.descricao h3{color:#23293b}
+div.trabalho div.img-trabalho{height: 340px;}
+div#coolab-noticias{background: #c6cbdc;border-top: 1px solid #a5a5a5; padding-left: 10%; padding-right: 10%; margin-top:30px;}
+div#coolab-noticias h2:first-child{ text-align: left; margin: 0 0 0 15px; }
+div#coolab-noticias div.noticia{width: 100%;background: #e6eaf4; height: 29em;}
+div#coolab-noticias div.noticia img{width: 100%;}
+div#coolab-noticias div.noticia h3{color: #00bc9b;}
+div#coolab-noticias div.noticia p.data-noticia{font-weight: bold; color: #3e444f}
+div#coolab-noticias div.noticia div.descricao{padding: 10px; }
+div#coolab-info{background: #00bc9b; }
+
+div#coolab-sobre, div#coolab-contato, div#coolab-post {margin-top: 90px; }
+div#coolab-contato form textarea#mensagem{width: 100%; height: 200px; resize: none;}
+div#coolab-contato form div.pure-controls{margin: 1.5em 0 0 0; float: right;}
+div#coolab-contato form div.pure-controls button{background-color: #f9005b;border-radius: 50px;}
+div.participar{margin-top: 45px;}
+
+div#coolab-post p.projeto-descricao{margin-bottom: 50px;}
+div#coolab-post div.projeto-info{border-top: 1px solid; border-bottom: 1px solid; margin-bottom: 50px;}
+div#coolab-post div.projeto-info p{border-bottom: 1px solid #fff;}
+div#coolab-post div.projeto-info p:last-child{border:none;}
+div#coolab-post div.projeto-info p span{float: right; font-weight: bold; text-align: left;}
+
+div.blog-post{width: 90%; background-color: #e7ebf4; padding:25px; padding-bottom: 25px; margin-bottom: 25px;}
+div.blog-post h2{color:#24b29a;}
+div.blog-post p.post-data{font-weight: bold;}
+div.blog-post p.post-resumo{padding-bottom: 30px; border-bottom: solid 1px; }
+div.blog-post a{text-decoration: none;}
+div.blog-post a p{  color: #ea3963; text-align: right; font-weight: bold;}
+
+ul#lista-arquivos{list-style: none; color:#ea3963;}
+
+form#newsletter{text-align: left;}
+div.footer{background-color:#23293b;}
+div#coolab-footer div:first-child{margin-bottom: 25px;}
+div#coolab-footer ul{padding: 0;}
+div#coolab-footer ul li{float: left; margin-left: 10px;list-style: none;}
+div#coolab-footer ul li a{text-decoration: none; color: #fff; font-weight: bold;}
+div#coolab-footer ul#link-social li:first-child a{color: #f9005b; border-right: 1px solid black; padding-right: 10px;}
+div#coolab-footer div.social-logo{float: left; width: 40px; height: 40px; margin-left: 10px; border-radius: 30px; background: #004D54; }
+div#coolab-footer div#social-fb{background-image: url('../images/icons/icon-fb.png');}
+div#coolab-footer div#social-flickr{background-image: url('../images/icons/icon-flickr.png');}
+div#coolab-footer div#social-twitter{background-image: url('../images/icons/icon-twitter.png');}
+div.footer{position: unset;}

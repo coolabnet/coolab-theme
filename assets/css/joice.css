@@ -1,0 +1,649 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #1E2738;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Montserrat Alternates";
+  font-weight: 800;
+  font-size: 1.563rem;
+  padding: 30px 0;
+  padding-top: 35px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Montserrat Alternates";
+  
+  
+}
+
+h5{
+  font-weight: bold;
+}
+p {
+  
+  font-weight: 600;
+  color: #1E2738;
+}
+
+.header {
+  background-color: #1E2738;
+}
+
+.header-index {
+  background-image: url("../assest/banner.jpg");
+  background-size: cover;
+  height: 30rem;
+}
+
+.header-nav {
+  height: 4rem;
+  z-index: 999;
+}
+
+button.header-nav-img {
+  color: white;
+}
+
+.header-btn {
+  background-color:  #EA3963;
+  
+}
+
+.header-text {
+  padding: 0 0 2% 6%;
+  display: flex;
+  align-content: flex-start;
+}
+
+.header-title {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+a.nav-item-link:hover {
+  color: #EA3963!important;
+  
+}
+
+.row-footer-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-green {
+  background-color: rgba(33, 166, 144, 0.534);
+  height: 30rem;
+}
+
+.img-logo {
+  width: 120px;
+  margin-right: 30rem;
+}
+
+@media (max-width: 420px) {
+  .img-logo {
+    margin-right: 0px;
+  }
+}
+
+.contato-img {
+  margin-right: 10px;
+}
+
+.img-redes {
+  padding: 5px;
+}
+
+.footer-div-1{
+  padding-top: 10px;
+}
+
+.footer-div-2{
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+  .header-index {
+    height: 30rem;
+  }
+  
+  .header-text {
+    padding: 0;
+    
+  }
+  
+  .footer {
+    align-content: center;
+  }
+  .footer-div-1 {
+    flex-direction: column;
+    align-items: center!important;
+    padding-bottom: 0;
+  }
+  
+  .footer-div-2 {
+    flex-direction: column;
+    align-items: center!important;
+  }
+  
+  .nav-3 {
+    padding-top: -3px;
+  }
+  
+  .nav-3, .nav-4 {
+    align-items: center!important;
+  }
+  
+  .nav-link-barra {
+    display: none;
+  }
+  
+  
+}
+
+.container-menor {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contato {
+  background-color: #E7EBF4;
+}
+
+.contato .form-group {
+  margin: 0;
+}
+
+.contato .form-control {
+  padding: 30px;
+}
+
+.contato .button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px; 
+  margin-bottom: 50px;
+}
+
+.contato .btn {
+  border-radius: 20px;
+  padding: 7px 40px;
+  font-weight: bold;
+  border-style: none;
+  background-color: #EA3963;
+}
+
+.error {
+  color: red;
+  padding-left: 30px;
+}
+
+.section-projetos {
+  background-color: #C7CEDD;
+  padding: 30px 0;
+}
+
+.main-projetos {
+  background-color: #E7EBF4;
+  margin: 0;
+  padding-bottom: 45px;
+}
+
+.row-projetos {
+  margin: 10px 0;
+}
+
+.col-projetos {
+  padding: 0 5px;
+}
+
+/* footer-projetos */
+.card-projetos {
+  width: 100%;
+  height: 350px;
+  background-image: url(../assest/noticias/foto1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  
+}
+
+
+.card-dois-projetos{
+  
+  background-image: url(../assest/projetos/amazonas.jpg);
+  
+}
+
+.card-tres-projetos{
+  background-image: url(../assest/projetos/maxresdefault.jpg);
+}
+.btn-footerprojetos{
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.card-projetos-content {
+  margin: 20px auto;
+}
+
+.card-projetos-body {
+  background-color: rgba(33, 166, 143, 0.75);
+  height: 40%;
+  text-align: center;
+}
+
+.card-projetos-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.footer-projetos-title{
+  font-weight: 100;
+}
+.card-projetos-text {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: #ffffff;
+}
+
+.card-projetos:hover .card-projetos-body {
+  background-color: #EA3963;
+  transition: all 0.5s;
+}
+
+.card-projetos:hover .card-projetos-title {
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.card-projetos:hover .card-projetos-text {
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+
+/* footer-noticias */
+.footer-noticias {
+  background-color: #C7CEDD;
+  padding: 25px 0;
+  border-top: 1px solid #a5a5a5;
+}
+
+.footer-noticias-title {
+  font-weight: 800;
+  font-size: 1.563rem;
+}
+
+.row-footer-noticias {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.btn-footer-projetos-noticias{
+  padding: 0px;
+  width: 100%;
+}
+
+.col-footer-noticias {
+  padding: 0 5px;
+}
+
+.card-footer-noticias {
+  width: 100%;
+  height: 390px;
+  background-color: #ffffff;
+}
+
+.card-footer-noticias-img {
+  height: 180px;
+}
+
+.card-footer-noticias-img img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.card-footer-noticias-body {
+  padding: 20px 25px;
+  color: #ffffff;
+  z-index: 99;
+}
+
+.card-footer-noticias-title {
+  color: #21A68F;
+  font-weight: 800;
+  font-size: 1.125rem;
+  padding-bottom: 45px;
+}
+
+.card-footer-noticias-data {
+  font-weight: 800; 
+  font-size: 0.875rem;
+}
+
+.card-footer-noticias-text {
+  overflow: hidden;
+  font-size: 0.860rem;
+  font-family: "Montserrat";
+}
+
+body{
+  background: #E7EBF4;
+}
+
+
+.galeria-post {
+  column-count: 3;
+  column-gap: 5px;
+  margin-bottom: 50px;
+}
+.galeria-post img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+.galeria-container{
+  margin-top: 25px;
+  margin-bottom: 51px;
+}
+.titulo-galeria-post{
+  margin-bottom: 25px;
+  margin-left: 14px;
+}
+
+.botao-voltar-projeto-post {    
+  text-align: right;
+  margin-left: -30px;    
+}
+.projetos-link{   
+  color: red;
+  font-weight: bold;
+}
+.projeto-box{
+  margin-top: 20px;
+}
+
+/* mapa-pagina projetos post */
+.localizacao-container{
+  margin-top: 25px;
+  margin-bottom: 51px;
+}
+.titulo-localizacao-container{
+  margin-bottom: 25px;
+}
+
+.projeto-titulo{
+  margin-top: 51px;   
+}
+
+.projeto-lista{
+  z-index: 900;
+  border-top: #ccc 2px solid;
+  border-bottom: #ccc 2px solid;        
+}
+.projeto-lista p strong{
+  margin-left: 10px;
+  font-weight: bolder;
+}
+.projeto-lista p{
+  padding: 6px 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .galeria-post {
+    column-count: 2;
+    column-gap: 5px;
+  }
+}
+.gallery-lightbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.gallery-lightbox.gallery-lightbox--visible {
+  display: block;
+}
+.gallery-lightbox::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lightbox-content {
+  width: 700px;
+  position: relative;
+}
+.modal fade{
+  max-width: 350px;
+  max-height: 350px;
+}
+.container.galeria-post img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+#modalGaleria .modal-content{
+  background: none;
+}
+#modalGaleria  img {
+  max-height: 80vh;
+  margin: auto;
+}
+
+/* CSS DA PÁGINA QUEM SOMOS */
+
+/* *{
+  background-color: #E7EBF4;
+} */
+
+/* footer */
+.container-quemsomos{
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 65px;
+  
+  margin-top: 50px;
+}
+
+.titulo-quemsomos{
+  color:  #58b59f;
+  font-size: 26px;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+.container-quemsomos ul{
+  list-style: none;
+  padding: 0;
+}
+ul{
+  font-weight: 600;
+}
+
+ul .sobre-list:before{
+  content: '•';
+  font-weight: 600;
+  color: #44B8A5;
+  
+}
+
+.container .hr{
+  border-bottom: 1px solid #a5a5a5;
+  
+}
+
+
+/* .coolab-trabalhos-imagesicon{
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  
+}
+.coolab-trabalhos-imagesicon  img{
+  /* width: 55%; */
+  /* max-width: 20vh;
+  
+} */ 
+
+.card-quemsomos{
+  background-color: #e7ebf4;
+  position: relative;
+  border: none;
+}
+
+.card-quemsomos img{
+  width: 20vh;
+}
+
+
+.coolab-trabalhos-imagesicon{
+  height: 70px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.coolab-trabalhos-imagesicon  img{
+  /* width: 55%; */
+  max-width: 90px;
+  max-height: 88px;
+}
+
+.sobre-button{
+  
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.sobre-button a{
+  margin-top: 20px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  background-color: #f9005b;
+  padding: 8px 20px;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: white;
+}
+.quemsomos-inicio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;    
+  margin: 0 auto;
+}
+
+/* pagina participar */
+
+.btn-participar-center{
+  justify-content: end;
+}
+
+
+/* mobile página quem somos */
+@media (max-width: 768px){
+  
+  
+  .mobile-quemsomos{
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    align-items: center;
+  }
+  .coolab-trabalhos-imagesicon{
+    display: block;
+  }
+  
+  .titulo-quemsomos{
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  h1{
+    text-align: center;
+    padding-top: 26px;
+  }
+  
+  .sobre-button{
+    justify-content: center;
+  }
+
+  .contador-grande >p {
+    font-size: 1.2rem !important;
+  }
+  
+  .contador-grande > span {
+    font-size: 3rem !important ;
+    color: yellow ;
+    
+  }
+}
+
+@media (max-width: 420px){
+  .contador-grande > span {
+    font-size: 3rem;
+
+  }
+}
+
+/* SEÇÃO PROJETO DA PAG HOME */
+.projeto-secao{
+  margin-top: 55px;
+}
+
+.tittle-project{
+  margin-bottom: 20px;
+}
+
+.contador{
+  background: url("../assest/textura.png");
+  background-size: cover;
+  height: 15rem;
+  width: 100%; 
+}
+
+.contador-grande{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contador-grande span,{
+  color: white;
+} 
+
+.contador-grande > span {
+  font-size: 5rem;
+  color: white;
+}
+
+.contador-grande > p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
