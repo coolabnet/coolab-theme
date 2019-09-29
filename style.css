@@ -708,6 +708,9 @@ ul .sobre-list:before{
 
 }
 
+div#wpforms-722{max-width: 440px;background: #c4c4c8; padding: 10px 15px;margin: auto; margin-top: auto;margin-bottom: auto;margin-top: 30px; margin-bottom: 30px;border: 1px solid #7b7b7b;border-radius: 5px;}
+
+
 @media (max-width: 420px){
   .contador-grande > span {
     font-family: "MontserratRegular";
