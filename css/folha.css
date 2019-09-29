@@ -162,3 +162,5 @@ div#coolab-footer div#social-fb{background-image: url('../images/icons/icon-fb.p
 div#coolab-footer div#social-flickr{background-image: url('../images/icons/icon-flickr.png');}
 div#coolab-footer div#social-twitter{background-image: url('../images/icons/icon-twitter.png');}
 div.footer{position: unset;}
+
+div#wpforms-722{max-width: 440px;background: #c4c4c8; padding: 10px 15px;margin: auto; margin-top: auto;margin-bottom: auto;margin-top: 30px; margin-bottom: 30px;border: 1px solid #7b7b7b;border-radius: 5px;}
