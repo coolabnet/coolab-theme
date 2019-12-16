@@ -34,7 +34,7 @@
                 </div>
             </nav>
             <nav class="nav-4 navbar navbar-dark d-flex flex-column">
-                <p class="medium">₢2019 Coolab. Todos os direitos reservados.</p>
+                <p class="medium">&copy; 2020 Coolab. Todos os direitos reservados.</p>
             </nav>
         </div>
 

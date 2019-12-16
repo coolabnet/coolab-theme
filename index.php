@@ -2,7 +2,11 @@
   <?php if (is_category('noticia')) : // this checks whether a query for a given category was made ?>
     <main class="main">
       <div class="container-menor">
-        <h1>Notícias</h1>
+        <div class="row">
+          <div class="col-10 col-md-7 col-sm-10" style="margin: auto; "> <h1>Notícias</h1></div>
+        </div>
+      
+      
         <?php if(have_posts()) :?>
           <?php while(have_posts()) : the_post();?>
             <?php get_template_part( 'template-parts/post/content', get_post_format() );?>

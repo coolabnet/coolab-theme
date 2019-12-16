@@ -17,18 +17,64 @@ get_header(); ?>
         <div class="container">
             <div class="row header-text-row">
                 <div class="header-text align-items-start col-lg-6 col-md-9">
-                    <h1 class="header-title">A Coolab agrega diversas pessoas e projetos de telecomunicação
+                    <h1 class="header-title" style="margin:30px; font-family:'MontserratAlternates';">A Coolab agrega diversas pessoas e projetos de telecomunicação
                         comunitária
                         fomentando infraestruturas autônomas,
                         através da capacitação técnica e ativação</h1>
                         <form action="<?php echo home_url(); ?>/index.php/como-participar/">
-                          <button type="submit" class="btn btn-rosa text-light"><a  class="text-light">Como
+                          <button type="submit" class="btn btn-rosa text-light" style="margin-bottom: 50px;"><a  class="text-light">Como
                         participar</a></button></form>
                 </div>
             </div>
         </div>
     </section>
 
+ <section class="section-projetos" style="border-bottom: 1px solid #2E374F; padding: 70px 0 40px 0;">
+        <div class="container">
+            <div class="row row-footer-heading">
+                <div class="col">
+                    <h2 class="footer-noticias-title">Destaques</h2>
+                </div>
+                <div class="col">
+                    
+                </div>
+            </div>
+            <section class="projetos-card">
+                <div class="row row-projetos">
+
+                  <?php
+                  $args = array(
+                    'numberposts' => 3,
+                    'category_name' => 'destaque'
+                  );
+                  $latest_posts = get_posts( $args );
+                  ?>
+                  <?php foreach ( $latest_posts as $curr_post ) : ?>
+                      <div class="col-lg-4 col-projetos">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <a href="<?php the_permalink($curr_post); ?>">
+                                  <div class="card-destaques">
+                                      <div class="card-body card-projetos-body">
+                                          <div class="card-projetos-content">
+                                              <h5 class="card-title card-projetos-title footer-projetos-title">
+                                                <?php echo get_the_title($curr_post); ?>
+                                              </h5>
+                                              <p class="card-text card-projetos-text"><?php echo get_the_post_thumbnail_caption($curr_post); ?></p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                  <?php endforeach; ?>
+
+
+                </div>
+            </section>
+        </div>
+    </section>
 
 
     <section class="section-projetos">
@@ -83,7 +129,7 @@ get_header(); ?>
             <div class="row row-footer-heading">
                 <div class="col">
                     <h2 class="footer-noticias-title">
-                        Últimas notícias
+                        Últimas Notícias
                     </h2>
                 </div>
                 <div class="col">
@@ -126,78 +172,24 @@ get_header(); ?>
                       </a>
                     </div>
                 <?php endforeach; ?>
-
-                <!--
-                <div class="col-lg-4 col-footer-noticias">
-
-                    <div class="card-footer-noticias">
-                        <div class="card-body card-footer-noticias-body">
-                            <h5 class="card-title card-footer-noticias-title">Coolab Camp - Redes Livres Mão Na Massa
-                            </h5>
-                            <h6 class="card-subtitle card-footer-noticias-data mb-2 text-muted">18 de janeiro de 2018
-                            </h6>
-                            <p class="card-text card-footer-noticias-text">De 2 a 4 de março, a Coolab vai realizar em
-                                Monteiro Lobato (SP) uma imersão para troca horizontal
-                                de conhecimentos sobre redes comunitárias, tratando de temas como ativação comunitária,
-                                tecnologias
-                                de redes sem fio (WiFi) em malha (mesh), criação de provedores comunitários, rádios e
-                                televisões
-                                digitais comunitárias, entre outros. Nosso objetivo é fomentar a criação de
-                                infraestruturas
-                                autônomas de telecomunicação, estimulando a</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4 col-footer-noticias">
-                    <div class="card card-footer-noticias">
-                        <div class="card-footer-noticias-img">
-                            <img class="card-img-top img-fluid" src="<?php echo get_stylesheet_directory_uri();?>/assets/temp/noticias/foto2.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body card-footer-noticias-body">
-                            <h5 class="card-title card-footer-noticias-title">Coolab na Battle Mesh</h5>
-                            <h6 class="card-subtitle card-footer-noticias-data mb-2 text-muted">18 de janeiro de 2018
-                            </h6>
-                            <p class="card-text card-footer-noticias-text">Battle Mesh é o encontro anual dos
-                                desenvolvedores de sistemas</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-footer-noticias">
-                    <div class="card card-footer-noticias">
-                        <div class="card-footer-noticias-img">
-                            <img class="card-img-top img-fluid" src="<?php echo get_stylesheet_directory_uri();?>/assets/temp/noticias/foto2.png" alt="Card image cap">
-                        </div>
-                        <div class="card-body card-footer-noticias-body">
-                            <h5 class="card-title card-footer-noticias-title">Coolab na Battle Mesh</h5>
-                            <h6 class="card-subtitle card-footer-noticias-data mb-2 text-muted">18 de janeiro de 2018
-                            </h6>
-                            <p class="card-text card-footer-noticias-text">Battle Mesh é o encontro anual dos
-                                desenvolvedores de sistemas</p>
-                        </div>
-                    </div>
-                </div>
-              -->
             </div>
         </div>
 
     </section>
 
-    <section class="section-contador justify-content-around align-items-center d-flex justify-content-center">
-        <div class="container row align-items-center">
-            <div class="contador-grande col-4">
+    <section class="section-contador">
+        <div class="row row-cols-3">
+            <div class="contador-grande col col-sm">
                 <span>12</span>
                 <p>Comunidades<br>Impactadas</p>
             </div>
 
-            <div class="contador-grande col-4">
+            <div class="contador-grande col col-sm">
                 <span>08</span>
                 <p>Instalações<br>Complementares</p>
             </div>
 
-            <div class="contador-grande col-4">
+            <div class="contador-grande col col-sm">
                 <span>200</span>
                 <p>Pessoas<br>Conectadas</p>
             </div>
