@@ -1,7 +1,7 @@
     <footer class="footer bg-dark navbar-dark  ">
         <div class="footer-div-1 d-flex align-items-center justify-content-between container">
             <nav class="nav-1 navbar navbar-dark ">
-                <a class="nav-link medium text-light d-flex align-items-center" href="contato/">
+                <a class="nav-link medium text-light d-flex align-items-center" href="contato.html">
                     <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/icons/icon-contato.png" width="35" height="25" class="contato-img d-inline-block align-top"
                         alt=""> Contato
                 </a>

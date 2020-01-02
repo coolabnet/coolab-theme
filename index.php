@@ -5,8 +5,6 @@
         <div class="row">
           <div class="col-10 col-md-7 col-sm-10" style="margin: auto; "> <h1>Notícias</h1></div>
         </div>
-      
-      
         <?php if(have_posts()) :?>
           <?php while(have_posts()) : the_post();?>
             <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
@@ -73,7 +71,16 @@
       <?php else : ?>
         <h2>Não há posts de notícias</h2>
       <?php endif;?>
-    <?php elseif (in_category('projeto')) : ?>
+      <?php elseif (in_category('projeto')) : ?>
+      <!-- projeto -->
+      <?php if(have_posts()) :?>
+        <?php while(have_posts()) : the_post();?>
+          <?php get_template_part( 'template-parts/post/content', get_post_format() );?>
+        <?php endwhile; ?>
+      <?php else : ?>
+        <h2>Não há posts de projetos</h2>
+      <?php endif;?>
+      <?php elseif (in_category('destaque')) : ?>
       <!-- projeto -->
       <?php if(have_posts()) :?>
         <?php while(have_posts()) : the_post();?>
